@@ -9,7 +9,7 @@ const navigate = useNavigate({});
  const [book, setBook] = useState([]);
  console.log(id)
  const fetchBook = async () => {
-   const response = await axios.get(`http://localhost:3000/book/${id}`);
+   const response = await axios.get(`https://mern-node-0rt9.onrender.com/book/${id}`);
    if (response.status === 200) {
      setBook(response.data.data);
    }

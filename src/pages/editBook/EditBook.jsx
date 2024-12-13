@@ -38,7 +38,7 @@ const [data, setData] = useState({
     })
     formData.append('image',image)
 
-   const response = await axios.patch("http://localhost:3000/book/" + id, formData)
+   const response = await axios.patch("https://mern-node-0rt9.onrender.com/book/" + id, formData)
   if(response.status === 200){
     navigate("/book/" + id)
   }else{
